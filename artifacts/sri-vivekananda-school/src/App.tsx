@@ -6,7 +6,7 @@ import {
 } from 'lucide-react';
 
 const image = (path: string) => `/images/${path}`;
-const schoolName = 'SRI VIVEKANANDA NURSERY AND PRIMARY SCHOOL';
+const schoolName = 'SRI VIVEKANANDA SCHOOL';
 const emailAddress = 'vivekanandaspt@gmail.com';
 const phoneNumbers = ['99656 36999', '95971 91909', '73733 31600', '95971 91929'];
 const navItems = [
@@ -98,9 +98,9 @@ function App() {
       </div></div>
       <header className="navbar">
         <div className="container nav-inner">
-          <a href="#home" className="brand" onClick={() => setMenuOpen(false)} aria-label="Sri Vivekananda Nursery and Primary School home">
-            <img src={image('logo/sri-vivekananda-school-logo.jpeg')} alt="Official school logo" />
-            <span className="brand-name">SRI VIVEKANANDA<small>NURSERY AND PRIMARY SCHOOL</small></span>
+          <a href="#home" className="brand" onClick={() => setMenuOpen(false)} aria-label="Sri Vivekananda School home">
+            <span className="brand-mark" aria-hidden="true">SV</span>
+            <span className="brand-name">SRI VIVEKANANDA<small>SCHOOL</small></span>
           </a>
           <button className="menu-toggle" type="button" aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={21} /> : <Menu size={21} />}
@@ -117,7 +117,7 @@ function App() {
           <div className="container hero-inner">
             <div className="reveal">
               <div className="hero-kicker">A thoughtful start for every child</div>
-              <h1>SRI VIVEKANANDA <span>NURSERY AND</span> PRIMARY SCHOOL</h1>
+              <h1>SRI VIVEKANANDA <span>SCHOOL</span></h1>
               <p className="hero-location">SKR NAGAR, SINGARAPETTAI</p>
               <p className="hero-tagline">LEARNING&nbsp; • &nbsp;CHARACTER&nbsp; • &nbsp;EXCELLENCE</p>
               <p className="hero-copy">Providing a strong foundation for young minds through quality education, discipline, creativity and holistic development.</p>
@@ -133,7 +133,7 @@ function App() {
             </div>
           </div>
         </section>
-        <div className="welcome-strip"><div className="container welcome-strip-inner"><Sparkles size={17} /><span>From a child’s first classroom to the first steps in primary learning — <b>we grow together.</b></span></div></div>
+        <div className="welcome-strip"><div className="container welcome-strip-inner"><Sparkles size={17} /><span>From a child’s first classroom to confident early learning — <b>we grow together.</b></span></div></div>
 
         <section className="section" id="about">
           <div className="container about-grid">
@@ -143,7 +143,7 @@ function App() {
               <img className="about-seal" src={image('logo/jsp-educational-trust-seal.jpeg')} alt="JSP Educational Trust seal" />
             </div>
             <div className="about-content">
-              <SectionHeading label="WELCOME TO" title={schoolName} copy="At Sri Vivekananda Nursery and Primary School, foundational learning is about more than lessons. It is where children begin to trust their own ideas, find their voice and learn to care for the people around them." />
+              <SectionHeading label="WELCOME TO" title={schoolName} copy="At Sri Vivekananda School, foundational learning is about more than lessons. It is where children begin to trust their own ideas, find their voice and learn to care for the people around them." />
               <p className="section-copy">We nurture confidence, discipline, communication and creativity alongside good values. With patient guidance and a welcoming school community, each child is encouraged to take the next step — curious, capable and ready to learn.</p>
               <div className="values-row">
                 <div className="value-item"><strong>Confidence</strong><span>Try, explore, express</span></div>
@@ -163,7 +163,7 @@ function App() {
             <div className="why-grid">
               <div className="why-lead"><span className="eyebrow">More than the classroom</span><h3>Every day brings a chance to grow.</h3><p>Children learn best when they feel safe to ask, make, practise and try again. We bring foundational learning and character-building into the everyday life of school.</p></div>
               <div className="why-points">
-                <article className="why-point"><div className="point-mark"><BookOpen size={17} /></div><h3>Strong educational foundation</h3><p>Foundational learning for young students from Pre KG through primary school.</p></article>
+                <article className="why-point"><div className="point-mark"><BookOpen size={17} /></div><h3>Strong educational foundation</h3><p>Foundational learning for young students from Pre KG through the early years.</p></article>
                 <article className="why-point"><div className="point-mark"><Languages size={17} /></div><h3>Trilingual learning</h3><p>Tamil, English and Hindi are part of the school’s curriculum.</p></article>
                 <article className="why-point"><div className="point-mark"><Heart size={17} /></div><h3>Spoken English development</h3><p>Spoken English training supports communication and confidence.</p></article>
                 <article className="why-point"><div className="point-mark"><Pencil size={17} /></div><h3>Handwriting training</h3><p>Dedicated handwriting practice is part of the learning experience.</p></article>
@@ -176,7 +176,7 @@ function App() {
 
         <section className="section academics" id="academics">
           <div className="container">
-            <div className="academics-heading"><SectionHeading label="Learning journey" title="A thoughtful path through the early years." copy="From the first routines of Pre KG to the confident foundations of primary school, children are supported at each stage." /></div>
+            <div className="academics-heading"><SectionHeading label="Learning journey" title="A thoughtful path through the early years." copy="From the first routines of Pre KG to confident foundations for learning, children are supported at each stage." /></div>
             <div className="grade-row">
               {[['01','Pre KG','A gentle first step'],['02','LKG','Learning through discovery'],['03','UKG','Growing independence'],['04','Classes I–V','Foundations for what’s next']].map(([no,name,desc]) =>
                 <article className="grade-card" key={no}><span className="grade-no">{no}</span><h3>{name}</h3><small>{desc}</small></article>)}
@@ -255,8 +255,8 @@ function App() {
           <div className="container">
             <div className="leadership-head"><SectionHeading label="School leadership" title="Guided by care and commitment." copy="A leadership team dedicated to the school community and children’s learning journey." /></div>
             <div className="leaders">
-              <article className="leader-card"><div className="leader-initials" aria-hidden="true">RJ</div><div><span className="leader-role">Chairman</span><h3>R. Jayakumar</h3><p className="leader-qualifications"><strong>Educational Qualifications</strong>M.Sc., M.Phil., B.Ed., DPCS., DIM.</p></div></article>
-              <article className="leader-card"><div className="leader-initials" aria-hidden="true">CJ</div><div><span className="leader-role">Correspondent</span><h3>Mrs. C. Sathiya Jayakumar</h3><p className="leader-qualifications"><strong>Educational Qualifications</strong>M.Sc. (Psy), M.Sc. (MB), M.Ed., M.Phil.</p></div></article>
+              <article className="leader-card"><div className="leader-initials" aria-hidden="true">RJ</div><div><span className="leader-role">Chairman</span><h3>R. Jayakumar</h3><p className="leader-qualifications">M.Sc., M.Phil., B.Ed., DPCS., DIM.</p></div></article>
+              <article className="leader-card"><div className="leader-initials" aria-hidden="true">CJ</div><div><span className="leader-role">Correspondent</span><h3>Mrs. C. Sathiya Jayakumar</h3><p className="leader-qualifications">M.Sc. (Psy), M.Sc. (MB), M.Ed., M.Phil.</p></div></article>
             </div>
           </div>
         </section>
@@ -280,7 +280,7 @@ function App() {
             <div>
               <SectionHeading label="Get in touch" title="Let’s talk about your child’s next step." copy="For admission questions, current school information or to arrange a visit, please reach out to the school." />
               <div className="contact-details">
-                <div className="contact-line"><MapPin className="contact-line-icon" size={20}/><div><strong>Official address</strong><span>SRI VIVEKANANDA NURSERY AND PRIMARY SCHOOL<br/>SKR NAGAR, SINGARAPETTAI - 635 307,<br/>TAMIL NADU, INDIA</span></div></div>
+                <div className="contact-line"><MapPin className="contact-line-icon" size={20}/><div><strong>Official address</strong><span>SRI VIVEKANANDA SCHOOL<br/>SKR NAGAR, SINGARAPETTAI - 635 307,<br/>TAMIL NADU, INDIA</span></div></div>
                 <div className="contact-line"><Phone className="contact-line-icon" size={20}/><div><strong>Call the school</strong><span className="phone-list">{phoneNumbers.map((phone) => <a key={phone} href={`tel:${phone.replaceAll(' ','')}`}>{phone}</a>)}</span></div></div>
                 <div className="contact-line"><Mail className="contact-line-icon" size={20}/><div><strong>Email</strong><a href={`mailto:${emailAddress}`}>{emailAddress}</a></div></div>
               </div>
@@ -314,11 +314,11 @@ function App() {
       <footer className="site-footer">
         <div className="container">
           <div className="footer-top">
-            <div><div className="footer-brand"><img src={image('logo/sri-vivekananda-school-logo.jpeg')} alt="Sri Vivekananda Nursery and Primary School official logo"/><strong>{schoolName}</strong></div><p className="footer-about">Learning • Character • Excellence<br/>A welcoming foundation for children at SKR Nagar, Singarapettai.</p></div>
+            <div><div className="footer-brand"><span className="footer-brand-mark" aria-hidden="true">SV</span><strong>{schoolName}</strong></div><p className="footer-about">Learning • Character • Excellence<br/>A welcoming foundation for children at SKR Nagar, Singarapettai.</p></div>
             <div className="footer-col"><h3>Explore</h3><div className="footer-links">{navItems.map(([label,href])=><a key={label} href={href}>{label}</a>)}</div></div>
             <div className="footer-col"><h3>Contact the school</h3><div className="footer-contact"><span>SKR NAGAR, SINGARAPETTAI - 635 307,<br/>TAMIL NADU, INDIA</span>{phoneNumbers.map(phone=><a key={phone} href={`tel:${phone.replaceAll(' ','')}`}>{phone}</a>)}<a href={`mailto:${emailAddress}`}>{emailAddress}</a><a href="https://rte.tnschools.gov.in" target="_blank" rel="noreferrer">Official RTE portal ↗</a></div></div>
           </div>
-          <div className="footer-bottom"><span>© 2026 Sri Vivekananda Nursery and Primary School. All Rights Reserved.</span><span>SKR Nagar · Singarapettai · Tamil Nadu</span></div>
+          <div className="footer-bottom"><span>© 2026 Sri Vivekananda School. All Rights Reserved.</span><span>SKR Nagar · Singarapettai · Tamil Nadu</span></div>
         </div>
       </footer>
 
