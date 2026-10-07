@@ -1,0 +1,1 @@
+- [School content rules](school-content-rules.md) — use verified school facts and supplied photos only; treat poster dates as archived.
