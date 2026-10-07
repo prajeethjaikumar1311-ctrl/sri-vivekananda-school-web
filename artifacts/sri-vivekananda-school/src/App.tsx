@@ -22,16 +22,10 @@ const galleryImages: GalleryImage[] = [
   { src: 'campus/aerial-campus-view.jpeg', alt: 'Aerial view of the school campus among palm trees', title: 'Campus from above', category: 'CAMPUS' },
   { src: 'campus/campus-courtyard.jpeg', alt: 'Open courtyard and airy school building', title: 'Open spaces to learn', category: 'CAMPUS' },
   { src: 'campus/campus-building-evening.jpeg', alt: 'School building in warm late-afternoon light', title: 'School in the evening light', category: 'CAMPUS' },
-  { src: 'campus/campus-building-wide.jpeg', alt: 'Wide view of the school building and landscaped front', title: 'A bright place to begin', category: 'CAMPUS' },
   { src: 'students/educational-trip-paravasa-uganam.jpeg', alt: 'Students and teachers together on an educational trip to Paravasa Uganam', title: 'Learning beyond the classroom', category: 'STUDENTS' },
   { src: 'students/educational-trip-outdoor.jpeg', alt: 'Students and teachers on an outdoor educational visit', title: 'A day of discovery', category: 'EDUCATIONAL TOURS' },
   { src: 'events/cultural-celebration-kolam.jpeg', alt: 'Students gathered around a colourful kolam during a school celebration', title: 'Culture, colour and community', category: 'ACTIVITIES' },
   { src: 'events/school-celebration.jpeg', alt: 'Children gathered in the school courtyard for a celebration', title: 'Celebrating together', category: 'EVENTS' },
-  { src: 'events/18th-annual-day-invitation.jpeg', alt: 'Archived invitation artwork for the school’s 18th Annual Day', title: '18th Annual Day · archived invitation', category: 'EVENTS' },
-  { src: 'admissions/admissions-2026-2027-poster.jpeg', alt: 'Admissions 2026–2027 poster for Pre KG to V Standard', title: 'Admissions 2026–2027 · reference poster', category: 'ADMISSIONS' },
-  { src: 'admissions/rte-admission-notice-2026.jpeg', alt: 'RTE admissions reference poster listing the required documents', title: 'RTE document reference · archived poster', category: 'ADMISSIONS' },
-  { src: 'logo/sri-vivekananda-school-logo.jpeg', alt: 'Official Sri Vivekananda Nursery and Primary School logo', title: 'Our school emblem', category: 'CAMPUS' },
-  { src: 'logo/jsp-educational-trust-seal.jpeg', alt: 'JSP Educational Trust seal', title: 'JSP Educational Trust', category: 'CAMPUS' },
 ];
 const galleryCategories = ['ALL', 'CAMPUS', 'STUDENTS', 'EVENTS', 'ACTIVITIES', 'EDUCATIONAL TOURS', 'ADMISSIONS'];
 const notices = [
@@ -228,7 +222,7 @@ function App() {
               <div className="activity-chips">
                 <span className="activity-chip">Educational trips</span><span className="activity-chip">Cultural activities</span><span className="activity-chip">Celebrations</span><span className="activity-chip">Student activities</span><span className="activity-chip">Sports</span><span className="activity-chip">Yoga</span><span className="activity-chip">Dance</span><span className="activity-chip">Karate</span><span className="activity-chip">Computer training</span>
               </div>
-              <div className="annual-card"><div className="annual-icon"><CalendarDays size={22}/></div><div><strong>18th Annual Day</strong><span>A school event celebrating students and their year. See the archived invitation in our gallery.</span></div></div>
+              <div className="annual-card"><div className="annual-icon"><CalendarDays size={22}/></div><div><strong>School celebrations</strong><span>Students take part in shared school activities and celebrations.</span></div></div>
             </div>
           </div>
         </section>
@@ -261,23 +255,23 @@ function App() {
           <div className="container">
             <div className="leadership-head"><SectionHeading label="School leadership" title="Guided by care and commitment." copy="A leadership team dedicated to the school community and children’s learning journey." /></div>
             <div className="leaders">
-              <article className="leader-card"><div className="leader-initials" aria-hidden="true">RJ</div><div><span className="leader-role">Chairman</span><h3>R. Jayakumar</h3></div></article>
-              <article className="leader-card"><div className="leader-initials" aria-hidden="true">CJ</div><div><span className="leader-role">Correspondent</span><h3>Mrs. C. Sathiya Jayakumar</h3></div></article>
+              <article className="leader-card"><div className="leader-initials" aria-hidden="true">RJ</div><div><span className="leader-role">Chairman</span><h3>R. Jayakumar</h3><p className="leader-qualifications"><strong>Educational Qualifications</strong>M.Sc., M.Phil., B.Ed., DPCS., DIM.</p></div></article>
+              <article className="leader-card"><div className="leader-initials" aria-hidden="true">CJ</div><div><span className="leader-role">Correspondent</span><h3>Mrs. C. Sathiya Jayakumar</h3><p className="leader-qualifications"><strong>Educational Qualifications</strong>M.Sc. (Psy), M.Sc. (MB), M.Ed., M.Phil.</p></div></article>
             </div>
           </div>
         </section>
 
         <section className="section gallery" id="gallery">
           <div className="container">
-            <div className="gallery-head"><div><SectionHeading label="Moments at school" title="A closer look at our school life." copy="Campus views, learning journeys, celebrations and reference materials from the school community." /></div><span className="eyebrow" style={{color:'var(--navy)'}}>{galleryImages.length} images</span></div>
+            <div className="gallery-head"><div><SectionHeading label="Moments at school" title="A closer look at our school life." copy="Campus views, learning journeys and celebrations from the school community." /></div><span className="eyebrow" style={{color:'var(--navy)'}}>{galleryImages.length} images</span></div>
             <div className="filters" role="group" aria-label="Filter gallery by category">
               {galleryCategories.map(item => <button type="button" key={item} className={`filter-btn ${category === item ? 'active' : ''}`} onClick={() => setCategory(item)}>{item}</button>)}
             </div>
-            <div className="gallery-grid">
+            {visibleGallery.length > 0 ? <div className="gallery-grid">
               {visibleGallery.map((item) => <button type="button" key={item.src} className="gallery-card" onClick={() => setActiveImage(item.originalIndex)} aria-label={`Open image: ${item.title}`}>
                 <img src={image(item.src)} alt={item.alt} loading="lazy" /><span className="gallery-caption"><span className="gallery-category">{item.category}</span>{item.title}</span>
               </button>)}
-            </div>
+            </div> : <p className="gallery-empty">No admissions photos are included in this gallery.</p>}
           </div>
         </section>
 
