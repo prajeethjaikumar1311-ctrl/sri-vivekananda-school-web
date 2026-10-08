@@ -27,16 +27,15 @@ export interface ContactInfo {
     ocrSpacedVariation: string;
     note: string;
   };
+  trustSeal: string;
   rtePortalUrl: string;
 }
 
 export interface LeadershipMember {
   name: string;
   role: string;
-  tamilRole: string;
   qualifications: string;
   organization: string;
-  seal: string;
   vision: string;
 }
 
@@ -105,6 +104,7 @@ export const schoolData: ContactInfo = {
     ocrSpacedVariation: 'vivekanandasp t@gmail.com',
     note: 'Preserved as visible in official school material. Standard verified address: vivekanandaspt@gmail.com',
   },
+  trustSeal: '/images/logo/jsp-educational-trust-seal.jpeg',
   rtePortalUrl: 'https://rte.tnschools.gov.in',
 };
 
@@ -113,22 +113,18 @@ export const leadershipData: {
   correspondent: LeadershipMember;
 } = {
   chairman: {
-    name: 'R. Jayakumar',
+    name: 'Mr. R. Jayakumar',
     role: 'Chairman',
-    tamilRole: 'தலைவர்',
     qualifications: 'M.Sc., M.Phil., B.Ed., DPCS., DIM.',
     organization: 'JSP Educational Trust, Singarapettai',
-    seal: '/images/logo/jsp-educational-trust-seal.jpeg',
     vision:
       'Dedicated to providing high quality, disciplined, and value-based education that builds character, confidence, and foundational skills for every child in Singarapettai.',
   },
   correspondent: {
     name: 'Mrs. C. Sathiya Jayakumar',
     role: 'Correspondent',
-    tamilRole: 'தாளாளர்',
     qualifications: 'M.Sc. (Psy), M.Sc. (MB), M.Ed., M.Phil.',
     organization: 'Sri Vivekananda School, Singarapettai',
-    seal: '/images/logo/jsp-educational-trust-seal.jpeg',
     vision:
       'Committed to child-centered holistic learning, encouraging spoken language proficiency, personal discipline, and creative development in a warm, nurturing environment.',
   },

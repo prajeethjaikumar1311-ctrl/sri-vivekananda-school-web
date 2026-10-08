@@ -9,7 +9,7 @@ import {
   ChevronRight,
   Heart,
 } from 'lucide-react';
-import { schoolData, leadershipData } from '../data/schoolData';
+import { schoolData } from '../data/schoolData';
 
 export const Footer: React.FC = () => {
   return (
@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
             <div className="pt-2 flex items-center gap-3">
               <div className="w-10 h-10 rounded-full overflow-hidden bg-white p-0.5 shadow-xs shrink-0 ring-1 ring-blue-500">
                 <img
-                  src={leadershipData.chairman.seal}
+                  src={schoolData.trustSeal}
                   alt="JSP Educational Trust Seal"
                   className="w-full h-full object-cover rounded-full"
                 />

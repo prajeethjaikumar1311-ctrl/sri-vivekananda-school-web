@@ -26,13 +26,13 @@ export const HomePage: React.FC = () => {
       {/* 7. Academics */}
       <AcademicsSection />
 
-      {/* 8. Leadership */}
-      <LeadershipSection />
-
-      {/* 9. Admissions 2026–2027 */}
+      {/* 8. Admissions 2026–2027 */}
       <AdmissionsSection />
 
-      {/* 10. Contact */}
+      {/* 9. School Administration */}
+      <LeadershipSection />
+
+      {/* 10. Contact / Get In Touch */}
       <ContactSection />
     </main>
   );

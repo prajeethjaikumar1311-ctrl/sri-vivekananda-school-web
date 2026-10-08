@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { ChevronRight, CheckCircle2, HeartHandshake, Shield, Sparkles } from 'lucide-react';
-import { schoolData, leadershipData } from '../data/schoolData';
+import { schoolData } from '../data/schoolData';
 import { SectionHeader } from '../components/SectionHeader';
 
 export const WelcomeSection: React.FC = () => {
@@ -25,7 +25,7 @@ export const WelcomeSection: React.FC = () => {
               <div className="absolute -bottom-6 -right-4 sm:-bottom-8 sm:right-6 bg-white p-3 rounded-2xl shadow-2xl ring-1 ring-slate-900/10 flex items-center gap-3 max-w-[280px]">
                 <div className="w-14 h-14 rounded-full overflow-hidden shrink-0 border-2 border-amber-400">
                   <img
-                    src={leadershipData.chairman.seal}
+                    src={schoolData.trustSeal}
                     alt="JSP Educational Trust Seal"
                     className="w-full h-full object-cover"
                   />
