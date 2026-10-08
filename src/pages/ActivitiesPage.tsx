@@ -1,7 +1,5 @@
 import React from 'react';
 import { Breadcrumbs } from '../components/Breadcrumbs';
-import { ActivitiesSection } from '../sections/ActivitiesSection';
-import { SchoolLifeSection } from '../sections/SchoolLifeSection';
 import { EventsSection } from '../sections/EventsSection';
 
 export const ActivitiesPage: React.FC = () => {
@@ -21,17 +19,11 @@ export const ActivitiesPage: React.FC = () => {
             </h1>
             <p className="text-base sm:text-lg text-blue-100 leading-relaxed">
               Yoga and Karate practice, dance training, cultural festivals, and annual
-              educational study tours beyond the classroom walls.
+              educational celebrations and milestones.
             </p>
           </div>
         </div>
       </section>
-
-      {/* Activities Section */}
-      <ActivitiesSection />
-
-      {/* School Life Collage */}
-      <SchoolLifeSection />
 
       {/* Events Timeline */}
       <EventsSection />

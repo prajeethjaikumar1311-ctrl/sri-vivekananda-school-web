@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { ChevronRight, ArrowDown, Sparkles, ShieldCheck, BookOpen, Award } from 'lucide-react';
-import { schoolData, leadershipData } from '../data/schoolData';
+import { schoolData } from '../data/schoolData';
 
 export const HeroSection: React.FC = () => {
   return (

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Breadcrumbs } from '../components/Breadcrumbs';
-import { FacilitiesSection } from '../sections/FacilitiesSection';
-import { TransportationSection } from '../sections/TransportationSection';
 import { ContactSection } from '../sections/ContactSection';
 
 export const FacilitiesPage: React.FC = () => {
@@ -14,24 +12,18 @@ export const FacilitiesPage: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl space-y-4">
             <span className="inline-block px-3 py-1 rounded-full text-xs font-black tracking-wider uppercase bg-amber-400 text-slate-950">
-              Campus & Infrastructure
+              Campus & Environment
             </span>
             <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-white">
-              Campus Facilities
+              Campus Facilities & Environment
             </h1>
             <p className="text-base sm:text-lg text-blue-100 leading-relaxed">
-              Airy classrooms, open playground, purified drinking water, and dedicated
-              school bus transportation across Singarapettai routes.
+              Spacious classrooms, open playground, purified drinking water, and safe
+              campus learning environment in Singarapettai.
             </p>
           </div>
         </div>
       </section>
-
-      {/* Facilities Main Section */}
-      <FacilitiesSection />
-
-      {/* Transportation Section */}
-      <TransportationSection />
 
       {/* Contact Section */}
       <ContactSection />

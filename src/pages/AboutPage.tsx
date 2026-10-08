@@ -3,8 +3,6 @@ import { Breadcrumbs } from '../components/Breadcrumbs';
 import { AboutSection } from '../sections/AboutSection';
 import { LeadershipSection } from '../sections/LeadershipSection';
 import { WhyChooseSection } from '../sections/WhyChooseSection';
-import { schoolData, leadershipData } from '../data/schoolData';
-import { ShieldCheck, Award, HeartHandshake, CheckCircle2 } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
   return (

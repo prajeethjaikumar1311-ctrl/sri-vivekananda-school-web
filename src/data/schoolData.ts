@@ -36,8 +36,7 @@ export interface LeadershipMember {
   tamilRole: string;
   qualifications: string;
   organization: string;
-  image?: string;
-  seal?: string;
+  seal: string;
   vision: string;
 }
 
@@ -70,23 +69,6 @@ export interface ActivityItem {
   iconName: string;
 }
 
-export interface GalleryItem {
-  id: string;
-  src: string;
-  alt: string;
-  title: string;
-  subtitle: string;
-  category:
-    | 'CAMPUS'
-    | 'STUDENTS'
-    | 'EVENTS'
-    | 'EDUCATIONAL TRIPS'
-    | 'CULTURAL ACTIVITIES'
-    | 'CELEBRATIONS'
-    | 'TRANSPORTATION'
-    | 'SCHOOL LIFE';
-  featured?: boolean;
-}
 
 export interface WhyChooseItem {
   title: string;
@@ -132,22 +114,22 @@ export const leadershipData: {
   correspondent: LeadershipMember;
 } = {
   chairman: {
-    name: 'Mr. R. Jayakumar',
-    role: 'Chairman & Founder',
+    name: 'R. Jayakumar',
+    role: 'Chairman',
     tamilRole: 'தலைவர்',
     qualifications: 'M.Sc., M.Phil., B.Ed., DPCS., DIM.',
     organization: 'JSP Educational Trust, Singarapettai',
-    image: '/images/leadership/chairman-r-jayakumar.jpeg',
     seal: '/images/logo/jsp-educational-trust-seal.jpeg',
     vision:
       'Dedicated to providing high quality, disciplined, and value-based education that builds character, confidence, and foundational skills for every child in Singarapettai.',
   },
   correspondent: {
     name: 'Mrs. C. Sathiya Jayakumar',
-    role: 'Correspondent & Management',
+    role: 'Correspondent',
     tamilRole: 'தாளாளர்',
     qualifications: 'M.Sc. (Psy), M.Sc. (MB), M.Ed., M.Phil.',
     organization: 'Sri Vivekananda School, Singarapettai',
+    seal: '/images/logo/jsp-educational-trust-seal.jpeg',
     vision:
       'Committed to child-centered holistic learning, encouraging spoken language proficiency, personal discipline, and creative development in a warm, nurturing environment.',
   },
@@ -545,136 +527,6 @@ export const activitiesList: ActivityItem[] = [
     description:
       'Special coaching specifically taught to develop clear spoken English fluency and neat, confident cursive penmanship.',
     iconName: 'Pencil',
-  },
-];
-
-export const galleryImages: GalleryItem[] = [
-  {
-    id: 'gal-campus-wide',
-    src: '/images/campus/campus-building-wide.jpeg',
-    alt: 'Sri Vivekananda School three-storey building with colourful pillars and Saraswati garden statue',
-    title: 'Three-Storey School Building & Saraswati Garden',
-    subtitle: 'Front view showing airy verandas, colourful columns and the serene campus garden',
-    category: 'CAMPUS',
-    featured: true,
-  },
-  {
-    id: 'gal-campus-aerial',
-    src: '/images/campus/aerial-campus-view.jpeg',
-    alt: 'Aerial drone perspective of Sri Vivekananda School campus amidst Singarapettai palm groves',
-    title: 'Aerial View of School Campus',
-    subtitle: 'Bird’s-eye perspective capturing the school building, roof pavilion, and courtyard',
-    category: 'CAMPUS',
-    featured: true,
-  },
-  {
-    id: 'gal-trip-paravasa',
-    src: '/images/students/educational-trip-paravasa-uganam.jpeg',
-    alt: 'Students and staff in yellow school uniforms at Paravasa Ulagam waterfall attraction',
-    title: 'Educational Tour to Paravasa Ulagam',
-    subtitle: 'Students and teaching faculty together on a memorable experiential trip',
-    category: 'STUDENTS',
-    featured: true,
-  },
-  {
-    id: 'gal-events-kolam',
-    src: '/images/events/cultural-celebration-kolam.jpeg',
-    alt: 'Students gathered in prayer around a vibrant traditional Kolam with yellow school buses in background',
-    title: 'Traditional Festival Assembly & Kolam',
-    subtitle: 'Students in festive dress around an artistic floor Kolam with school buses behind',
-    category: 'CULTURAL ACTIVITIES',
-    featured: true,
-  },
-  {
-    id: 'gal-events-celebration',
-    src: '/images/events/school-celebration.jpeg',
-    alt: 'Festive school assembly with balloon decor, teachers and children in celebration dresses',
-    title: 'School Gathering & Festival Celebration',
-    subtitle: 'Children in festive attire gathered in the courtyard for a joyful school function',
-    category: 'CELEBRATIONS',
-    featured: true,
-  },
-  {
-    id: 'gal-trip-butterball',
-    src: '/images/students/educational-trip-outdoor.jpeg',
-    alt: 'Students and teachers at Krishna’s Butterball historical monument in Mahabalipuram',
-    title: 'Heritage Excursion to Krishna’s Butterball',
-    subtitle: 'Outdoor exploration of historic Tamil Nadu heritage sites with school teachers',
-    category: 'EDUCATIONAL TRIPS',
-    featured: true,
-  },
-  {
-    id: 'gal-transport-buses',
-    src: '/images/transport/school-buses-fleet.jpeg',
-    alt: 'Sri Vivekananda yellow school buses fleet parked on the school campus',
-    title: 'Sri Vivekananda School Bus Fleet',
-    subtitle: 'Official school buses serving designated student transit routes',
-    category: 'TRANSPORTATION',
-    featured: true,
-  },
-  {
-    id: 'gal-campus-courtyard',
-    src: '/images/campus/campus-courtyard.jpeg',
-    alt: 'Open school courtyard and spacious three floors of classrooms at Sri Vivekananda School',
-    title: 'Open Courtyard & Classrooms',
-    subtitle: 'Spacious grounds for daily assemblies, physical drills, and student activities',
-    category: 'CAMPUS',
-  },
-  {
-    id: 'gal-campus-roadside',
-    src: '/images/campus/school-building-roadside.jpeg',
-    alt: 'View of Sri Vivekananda School building from the peaceful road with boundary wall and palms',
-    title: 'Campus Along Tree-Lined Road',
-    subtitle: 'Approaching the school campus with coconut palms and boundary protection',
-    category: 'CAMPUS',
-  },
-  {
-    id: 'gal-village-aerial',
-    src: '/images/campus/aerial-village-view.jpeg',
-    alt: 'Panoramic aerial view of lush green agricultural fields and village setting of Singarapettai',
-    title: 'Singarapettai Countryside Setting',
-    subtitle: 'Lush greenery and calm village landscape surrounding Sri Vivekananda School',
-    category: 'CAMPUS',
-  },
-  {
-    id: 'gal-annual-day-poster',
-    src: '/images/events/18th-annual-day-invitation.jpeg',
-    alt: '18th Annual Day official invitation card of Sri Vivekananda School Singarapettai',
-    title: '18th Annual Day Invitation Card',
-    subtitle: 'Official invitation with leadership details and government recognition note',
-    category: 'EVENTS',
-  },
-  {
-    id: 'gal-admissions-poster',
-    src: '/images/admissions/admissions-2026-2027-poster.jpeg',
-    alt: 'Official Admissions Open 2026-2027 announcement poster for Pre-KG to V Standard',
-    title: 'Admissions Open 2026–2027 Poster',
-    subtitle: 'Full visual poster detailing classes, facilities, extracurriculars and contact numbers',
-    category: 'EVENTS',
-  },
-  {
-    id: 'gal-rte-notice',
-    src: '/images/admissions/rte-admission-notice-2026.jpeg',
-    alt: 'Official RTE Admission Open 2026-2027 notice poster with government guidelines',
-    title: 'RTE Admission Notice Poster',
-    subtitle: 'Official eligibility and document requirements under the Right to Education act',
-    category: 'EVENTS',
-  },
-  {
-    id: 'gal-school-life-community',
-    src: '/images/events/school-celebration.jpeg',
-    alt: 'Children and teachers interacting during courtyard celebration',
-    title: 'Learning & Growing Together',
-    subtitle: 'Supportive community fostering discipline, warmth, and lifelong friendships',
-    category: 'SCHOOL LIFE',
-  },
-  {
-    id: 'gal-school-life-assembly',
-    src: '/images/events/cultural-celebration-kolam.jpeg',
-    alt: 'Students assembled together with teachers on the campus courtyard',
-    title: 'Tradition, Respect & Harmony',
-    subtitle: 'Fostering cultural pride and mutual respect through collective celebrations',
-    category: 'SCHOOL LIFE',
   },
 ];
 

@@ -15,7 +15,6 @@ const navItems: NavItem[] = [
   { label: 'ACADEMICS', href: '/academics', path: '/academics' },
   { label: 'FACILITIES', href: '/facilities', path: '/facilities' },
   { label: 'ACTIVITIES', href: '/activities', path: '/activities' },
-  { label: 'GALLERY', href: '/gallery', path: '/gallery' },
   { label: 'ADMISSIONS', href: '/admissions', path: '/admissions' },
   { label: 'CONTACT', href: '/contact', path: '/contact' },
 ];

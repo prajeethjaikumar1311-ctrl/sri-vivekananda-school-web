@@ -72,8 +72,8 @@ export const ActivitiesSection: React.FC = () => {
 
             <div className="p-4 bg-white border-t border-slate-200/80 flex items-center justify-between text-xs font-bold text-blue-700">
               <span>Real Student Photograph</span>
-              <Link href="/gallery" className="hover:text-blue-900 inline-flex items-center gap-1">
-                <span>View In Gallery</span>
+              <Link href="/activities" className="hover:text-blue-900 inline-flex items-center gap-1">
+                <span>View Activities</span>
                 <ChevronRight size={13} />
               </Link>
             </div>
@@ -111,8 +111,8 @@ export const ActivitiesSection: React.FC = () => {
 
             <div className="p-4 bg-white border-t border-slate-200/80 flex items-center justify-between text-xs font-bold text-blue-700">
               <span>Courtyard Assembly</span>
-              <Link href="/gallery" className="hover:text-blue-900 inline-flex items-center gap-1">
-                <span>View In Gallery</span>
+              <Link href="/activities" className="hover:text-blue-900 inline-flex items-center gap-1">
+                <span>View Activities</span>
                 <ChevronRight size={13} />
               </Link>
             </div>

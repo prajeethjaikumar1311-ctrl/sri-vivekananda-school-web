@@ -11,7 +11,6 @@ import { AboutPage } from './pages/AboutPage';
 import { AcademicsPage } from './pages/AcademicsPage';
 import { FacilitiesPage } from './pages/FacilitiesPage';
 import { ActivitiesPage } from './pages/ActivitiesPage';
-import { GalleryPage } from './pages/GalleryPage';
 import { AdmissionsPage } from './pages/AdmissionsPage';
 import { ContactPage } from './pages/ContactPage';
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -40,7 +39,6 @@ export function App() {
           <Route path="/academics" component={AcademicsPage} />
           <Route path="/facilities" component={FacilitiesPage} />
           <Route path="/activities" component={ActivitiesPage} />
-          <Route path="/gallery" component={GalleryPage} />
           <Route path="/admissions" component={AdmissionsPage} />
           <Route path="/contact" component={ContactPage} />
           <Route component={NotFoundPage} />

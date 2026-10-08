@@ -1,8 +1,6 @@
 import React from 'react';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { ContactSection } from '../sections/ContactSection';
-import { TransportationSection } from '../sections/TransportationSection';
-import { schoolData } from '../data/schoolData';
 
 export const ContactPage: React.FC = () => {
   return (
@@ -29,9 +27,6 @@ export const ContactPage: React.FC = () => {
 
       {/* Contact Section */}
       <ContactSection />
-
-      {/* School Transport Information */}
-      <TransportationSection />
     </div>
   );
 };

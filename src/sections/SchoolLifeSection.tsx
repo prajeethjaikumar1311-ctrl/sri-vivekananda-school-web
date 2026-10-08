@@ -111,14 +111,14 @@ export const SchoolLifeSection: React.FC<SchoolLifeSectionProps> = ({ onImageCli
           </div>
         </div>
 
-        {/* View All Photos CTA */}
+        {/* View Activities CTA */}
         <div className="mt-12 text-center">
           <Link
-            href="/gallery"
+            href="/activities"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-sm uppercase tracking-wider shadow-lg transition-all transform hover:-translate-y-0.5"
           >
             <Camera size={18} />
-            <span>VIEW FULL SCHOOL PHOTO GALLERY</span>
+            <span>VIEW STUDENT ACTIVITIES</span>
             <ChevronRight size={18} />
           </Link>
         </div>

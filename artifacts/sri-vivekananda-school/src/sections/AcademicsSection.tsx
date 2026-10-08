@@ -1,16 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'wouter';
-import {
-  BookOpen,
-  Languages,
-  PenTool,
-  Laptop,
-  CheckCircle2,
-  ChevronRight,
-  Sparkles,
-  GraduationCap,
-} from 'lucide-react';
-import { academicClasses, schoolData } from '../data/schoolData';
+import { CheckCircle2, ChevronRight } from 'lucide-react';
+import { academicClasses } from '../data/schoolData';
 import { SectionHeader } from '../components/SectionHeader';
 
 export const AcademicsSection: React.FC = () => {
@@ -55,7 +46,7 @@ export const AcademicsSection: React.FC = () => {
         </div>
 
         {/* Classes Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredClasses.map((item) => (
             <div
               key={item.id}
@@ -111,67 +102,6 @@ export const AcademicsSection: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Special Academic Training Banner */}
-        <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-lg">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-5 space-y-3">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider">
-                <Sparkles size={13} className="text-amber-600" />
-                <span>Distinctive Skills Training</span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                Empowering Skills for Young Students
-              </h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                Academic success goes beyond rote memorization. At Sri Vivekananda School,
-                every child is guided through structured daily skills that prepare them for the modern world.
-              </p>
-            </div>
-
-            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-                <Languages size={20} className="text-blue-700 mt-1 shrink-0" />
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900">Spoken English Training</h4>
-                  <p className="text-xs text-slate-600 mt-1">
-                    Daily interactive drills specially taught to help students speak English fluently and confidently.
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-                <PenTool size={20} className="text-blue-700 mt-1 shrink-0" />
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900">Handwriting Training</h4>
-                  <p className="text-xs text-slate-600 mt-1">
-                    Dedicated handwriting coaching building clear, neat, and disciplined penmanship habits.
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-                <Laptop size={20} className="text-blue-700 mt-1 shrink-0" />
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900">Computer Training</h4>
-                  <p className="text-xs text-slate-600 mt-1">
-                    Introduction to basic digital skills, keyboarding, and interactive educational learning programs.
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-                <BookOpen size={20} className="text-blue-700 mt-1 shrink-0" />
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900">Trilingual Literacy</h4>
-                  <p className="text-xs text-slate-600 mt-1">
-                    Comprehensive instruction in Tamil, English, and Hindi cultivating trilingual language aptitude.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

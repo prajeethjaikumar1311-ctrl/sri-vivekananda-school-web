@@ -77,7 +77,6 @@ export const Footer: React.FC = () => {
                 { label: 'Academics', href: '/academics' },
                 { label: 'School Facilities', href: '/facilities' },
                 { label: 'Student Activities', href: '/activities' },
-                { label: 'Photo Gallery', href: '/gallery' },
                 { label: 'Admissions 2026–2027', href: '/admissions' },
                 { label: 'Contact Us', href: '/contact' },
               ].map((link) => (

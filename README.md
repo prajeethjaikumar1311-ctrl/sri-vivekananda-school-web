@@ -20,7 +20,7 @@ All visual content on this website uses the **authentic official school photogra
 
 1. **Sticky Modern Header & Navigation:**
    - Official circular Sri Vivekananda logo maintaining exact aspect ratio.
-   - Quick navigation to Home, About Us, Academics, Facilities, Activities, Gallery, Admissions, and Contact.
+   - Quick navigation to Home, About Us, Academics, Facilities, Activities, Admissions, and Contact.
    - Prominent **"ADMISSIONS OPEN"** CTA button.
    - Mobile-responsive navigation drawer with touch-friendly layout.
 
@@ -46,14 +46,10 @@ All visual content on this website uses the **authentic official school photogra
    - Dedicated bus transit section with verified routes note.
 
 7. **Respected Leadership Section:**
-   - **Chairman:** Mr. R. Jayakumar (*M.Sc., M.Phil., B.Ed., DPCS., DIM.*) featuring official portrait and JSP Educational Trust seal.
-   - **Correspondent:** Mrs. C. Sathiya Jayakumar (*M.Sc. (Psy), M.Sc. (MB), M.Ed., M.Phil.*).
+   - **Chairman:** R. Jayakumar (*M.Sc., M.Phil., B.Ed., DPCS., DIM.*) featuring official JSP Educational Trust seal and educational vision.
+   - **Correspondent:** Mrs. C. Sathiya Jayakumar (*M.Sc. (Psy), M.Sc. (MB), M.Ed., M.Phil.*) featuring official JSP Educational Trust seal and early education care focus.
 
-8. **Interactive Photo Gallery with Lightbox Viewer:**
-   - Categorized by: CAMPUS, STUDENTS, EVENTS, EDUCATIONAL TRIPS, CULTURAL ACTIVITIES, CELEBRATIONS, TRANSPORTATION, SCHOOL LIFE.
-   - Keyboard accessible (Arrow keys, Escape to close), full-screen viewing, captions, and responsive grid.
-
-9. **Admissions 2026–2027 & RTE Section:**
+8. **Admissions 2026–2027 & RTE Section:**
    - Official admissions poster display.
    - Comprehensive checklist of 6 required documents (Birth Certificate, Community Certificate, Income Certificate, Aadhaar Card, Passport Photos, Address Proof).
    - Dedicated **RTE Admission Information** card with verified age criteria (01-08-2022 to 31-07-2023) and 1km residential guideline.
@@ -123,16 +119,14 @@ Sri-Vivekananda-School-Website-1/
 │   │   ├── SchoolLifeSection.tsx
 │   │   ├── AdmissionsSection.tsx
 │   │   ├── TransportationSection.tsx
-│   │   ├── GallerySection.tsx
 │   │   ├── EventsSection.tsx
 │   │   └── ContactSection.tsx
 │   ├── pages/               # Individual SPA routes
-│   │   ├── HomePage.tsx     # Full 16-section homepage in exact order
+│   │   ├── HomePage.tsx     # Homepage
 │   │   ├── AboutPage.tsx
 │   │   ├── AcademicsPage.tsx
 │   │   ├── FacilitiesPage.tsx
 │   │   ├── ActivitiesPage.tsx
-│   │   ├── GalleryPage.tsx
 │   │   ├── AdmissionsPage.tsx
 │   │   ├── ContactPage.tsx
 │   │   └── NotFoundPage.tsx
@@ -198,7 +192,7 @@ This repository is pre-configured for **zero-configuration deployment on Vercel*
    - **Build Command:** `npm run build`
    - **Output Directory:** `dist`
 6. Click **Deploy**. Your official school website will go live in less than a minute!
-7. The included `vercel.json` ensures that deep links like `/about`, `/academics`, `/facilities`, `/activities`, `/gallery`, `/admissions`, and `/contact` resolve smoothly without 404 errors.
+7. The included `vercel.json` ensures that deep links like `/about`, `/academics`, `/facilities`, `/activities`, `/admissions`, and `/contact` resolve smoothly without 404 errors.
 
 ---
 
@@ -214,26 +208,6 @@ All textual content, contact details, leadership credentials, and lists are cent
 - **Activities & programs:** Update `activitiesList`.
 - **Admissions document requirements:** Update `admissionChecklist`.
 - **RTE guidelines:** Update `rteAdmissionInfo`.
-
----
-
-## Adding New Images to the Gallery
-
-To add new school photographs:
-
-1. Place the new image file in `public/images/<category-folder>/` (e.g. `public/images/events/sports-day-2027.jpeg`).
-2. Open `src/data/schoolData.ts` and append a new object to `galleryImages`:
-```typescript
-{
-  id: 'gal-sports-day-2027',
-  src: '/images/events/sports-day-2027.jpeg',
-  alt: 'Annual Sports Day 2027 track events',
-  title: 'Annual Sports Day Celebrations',
-  subtitle: 'Students participating in athletics and sprint events',
-  category: 'EVENTS',
-}
-```
-3. Run `npm run build` to verify the asset path. The image will automatically appear in the gallery and lightbox!
 
 ---
 

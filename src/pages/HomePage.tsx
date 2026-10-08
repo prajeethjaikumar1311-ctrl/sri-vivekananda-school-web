@@ -4,13 +4,8 @@ import { WelcomeSection } from '../sections/WelcomeSection';
 import { WhyChooseSection } from '../sections/WhyChooseSection';
 import { AboutSection } from '../sections/AboutSection';
 import { AcademicsSection } from '../sections/AcademicsSection';
-import { FacilitiesSection } from '../sections/FacilitiesSection';
 import { LeadershipSection } from '../sections/LeadershipSection';
-import { ActivitiesSection } from '../sections/ActivitiesSection';
-import { SchoolLifeSection } from '../sections/SchoolLifeSection';
 import { AdmissionsSection } from '../sections/AdmissionsSection';
-import { TransportationSection } from '../sections/TransportationSection';
-import { GallerySection } from '../sections/GallerySection';
 import { ContactSection } from '../sections/ContactSection';
 
 export const HomePage: React.FC = () => {
@@ -31,28 +26,13 @@ export const HomePage: React.FC = () => {
       {/* 7. Academics */}
       <AcademicsSection />
 
-      {/* 8. Facilities */}
-      <FacilitiesSection />
-
-      {/* 9. Leadership */}
+      {/* 8. Leadership */}
       <LeadershipSection />
 
-      {/* 10. Student Activities */}
-      <ActivitiesSection />
-
-      {/* 11. School Life / Photo Showcase */}
-      <SchoolLifeSection />
-
-      {/* 12. Admissions 2026–2027 */}
+      {/* 9. Admissions 2026–2027 */}
       <AdmissionsSection />
 
-      {/* 13. Transportation */}
-      <TransportationSection />
-
-      {/* 14. Gallery */}
-      <GallerySection />
-
-      {/* 15. Contact */}
+      {/* 10. Contact */}
       <ContactSection />
     </main>
   );
