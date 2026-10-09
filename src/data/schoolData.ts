@@ -77,9 +77,9 @@ export interface WhyChooseItem {
 }
 
 export const schoolData: ContactInfo = {
-  schoolName: 'SRI VIVEKANANDA NURSERY AND PRIMARY SCHOOL',
+  schoolName: 'Sri Vivekananda School, Singarapettai',
   shortName: 'Sri Vivekananda School',
-  tamilName: 'ஸ்ரீ விவேகானந்தா நர்சரி மற்றும் தொடக்கப்பள்ளி',
+  tamilName: 'ஸ்ரீ விவேகானந்தா பள்ளி, சிங்காரப்பேட்டை',
   tagline: 'Quality Education • Good Discipline • Holistic Development',
   subSlogan: 'Quality Education! | Good Discipline!! | Low Fees!!!',
   motto: 'Arise • Awake • Achieve',
@@ -285,7 +285,7 @@ export const whyChooseUs: WhyChooseItem[] = [
     title: 'Quality Education',
     subtitle: 'High academic standards',
     description:
-      'Rigorous foundational teaching crafted for nursery and primary years, ensuring solid literacy and numeracy.',
+      'Rigorous foundational teaching crafted for foundational learning years, ensuring solid literacy and numeracy.',
     iconName: 'GraduationCap',
   },
   {
@@ -513,7 +513,7 @@ export const activitiesList: ActivityItem[] = [
     title: 'Computer Training Sessions',
     category: 'SKILLS',
     description:
-      'Guided sessions introducing nursery and primary students to computer parts, basic typing, educational software, and interactive games.',
+      'Guided sessions introducing students to computer parts, basic typing, educational software, and interactive games.',
     iconName: 'Laptop',
   },
   {

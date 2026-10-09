@@ -1,7 +1,7 @@
 kind = "web"
 previewPath = "/"
 title = "Sri Vivekananda School"
-description = "The official website for Sri Vivekananda Nursery and Primary School in SKR Nagar, Singarapettai, sharing school information, campus and student life, admissions, and verified contact details."
+description = "The official website for Sri Vivekananda School, Singarapettai in SKR Nagar, Singarapettai, sharing school information, campus and student life, admissions, and verified contact details."
 version = "1.0.0"
 id = "artifacts/sri-vivekananda-school"
 router = "path"

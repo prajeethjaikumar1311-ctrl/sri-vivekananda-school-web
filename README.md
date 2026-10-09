@@ -1,4 +1,4 @@
-# Sri Vivekananda Nursery and Primary School — Official Website
+# Sri Vivekananda School, Singarapettai — Official Website
 
 > **Singarapettai – 635 307, Tamil Nadu, India**  
 > *Quality Education • Good Discipline • Holistic Development*  
@@ -8,7 +8,7 @@
 
 ## Overview
 
-This repository contains the official modern, responsive web application for **Sri Vivekananda Nursery and Primary School**, located in SKR Nagar, Singarapettai – 635 307.
+This repository contains the official modern, responsive web application for **Sri Vivekananda School, Singarapettai**, located in SKR Nagar, Singarapettai – 635 307.
 
 The website is crafted to serve parents, prospective families, teachers, students, and visitors. It highlights foundational education for **Pre-KG to Standard V**, trilingual curriculum (Tamil, English, Hindi), specialized spoken English and handwriting coaching, computer education, yoga, karate, safe campus bus transit, school celebrations, and current **Admissions 2026–2027** guidelines.
 
@@ -213,7 +213,7 @@ All textual content, contact details, leadership credentials, and lists are cent
 
 ## SEO & Accessibility Compliance
 
-- **Primary Title:** `Sri Vivekananda Nursery and Primary School, Singarapettai`
+- **Primary Title:** `Sri Vivekananda School, Singarapettai`
 - **Meta Description:** Official website with complete academic, admission, bus transport, and campus details.
 - **Structured Data:** Includes Schema.org `School` / `EducationalOrganization` JSON-LD for enhanced Google Search discovery.
 - **Alt Text:** Every image is tagged with descriptive, authentic alt text.
@@ -224,4 +224,4 @@ All textual content, contact details, leadership credentials, and lists are cent
 
 ## License & Copyright
 
-© 2026 **Sri Vivekananda Nursery and Primary School**, SKR Nagar, Singarapettai – 635 307. All Rights Reserved. Managed under **JSP Educational Trust**.
+© 2026 **Sri Vivekananda School, Singarapettai**, SKR Nagar, Singarapettai – 635 307. All Rights Reserved. Managed under **JSP Educational Trust**.

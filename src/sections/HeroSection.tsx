@@ -38,7 +38,7 @@ export const HeroSection: React.FC = () => {
           <div>
             <div className="text-amber-400 text-sm sm:text-base font-extrabold uppercase tracking-widest flex items-center gap-2 mb-2">
               <span className="w-8 h-0.5 bg-amber-400" />
-              <span>NURSERY AND PRIMARY EDUCATION</span>
+              <span>FOUNDATIONAL & ELEMENTARY EDUCATION</span>
             </div>
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.08] drop-shadow-md">
               SRI VIVEKANANDA <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-amber-200 to-amber-400">SCHOOL</span>

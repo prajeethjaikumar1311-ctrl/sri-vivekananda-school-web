@@ -46,7 +46,7 @@ export const WelcomeSection: React.FC = () => {
               {/* Decorative Accent Pill on Top Left */}
               <div className="absolute -top-4 -left-4 bg-blue-700 text-white px-4 py-2 rounded-xl shadow-lg flex items-center gap-2 text-xs font-bold">
                 <Sparkles size={14} className="text-amber-300" />
-                <span>Nursery & Primary Excellence</span>
+                <span>Foundational Educational Excellence</span>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@ export const WelcomeSection: React.FC = () => {
               badge="About Our Institution"
               title="WELCOME TO SRI VIVEKANANDA SCHOOL"
               subtitle="Nurturing Young Minds in Singarapettai"
-              description="Sri Vivekananda Nursery and Primary School is committed to providing quality foundational education, strong personal discipline, character development, and a supportive, caring learning environment for young students."
+              description="Sri Vivekananda School, Singarapettai is committed to providing quality foundational education, strong personal discipline, character development, and a supportive, caring learning environment for young students."
             />
 
             <p className="text-slate-600 leading-relaxed text-base">

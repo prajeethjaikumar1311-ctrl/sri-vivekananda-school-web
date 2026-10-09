@@ -28,12 +28,11 @@ export const Footer: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-lg font-extrabold text-white tracking-tight leading-tight">
-                  SRI VIVEKANANDA
+                  SRI VIVEKANANDA SCHOOL
                 </h3>
                 <p className="text-xs font-semibold text-amber-400 tracking-wider uppercase">
-                  Nursery & Primary School
+                  Singarapettai – 635 307
                 </p>
-                <p className="text-[11px] text-slate-400">Singarapettai – 635 307</p>
               </div>
             </div>
 
@@ -194,7 +193,7 @@ export const Footer: React.FC = () => {
 
         {/* Footer Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© 2026 Sri Vivekananda School. All Rights Reserved.</p>
+          <p>© 2026 Sri Vivekananda School, Singarapettai. All Rights Reserved.</p>
           <div className="flex items-center gap-4 text-slate-400">
             <span>SKR Nagar, Singarapettai – 635 307</span>
             <span>•</span>

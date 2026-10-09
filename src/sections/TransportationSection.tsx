@@ -67,7 +67,7 @@ export const TransportationSection: React.FC = () => {
                 {[
                   'Bus facilities available for school routes',
                   'Dedicated yellow school buses with official school identification',
-                  'Careful pickup and drop for nursery and primary students',
+                  'Careful pickup and drop for school students',
                   'Experienced drivers prioritizing safety and punctuality',
                 ].map((point, idx) => (
                   <div key={idx} className="flex items-start gap-2.5 text-xs text-slate-700">

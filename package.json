@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Official modern website for Sri Vivekananda Nursery and Primary School, Singarapettai – 635 307",
+  "description": "Official modern website for Sri Vivekananda School, Singarapettai – 635 307",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

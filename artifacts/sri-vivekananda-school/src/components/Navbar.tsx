@@ -63,12 +63,9 @@ export const Navbar: React.FC = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-base sm:text-lg lg:text-xl font-extrabold text-blue-950 tracking-tight leading-tight group-hover:text-blue-700 transition-colors">
-                SRI VIVEKANANDA
+                SRI VIVEKANANDA SCHOOL
               </span>
               <span className="text-[11px] sm:text-xs font-semibold text-blue-700 tracking-wider uppercase">
-                Nursery & Primary School
-              </span>
-              <span className="text-[10px] text-slate-500 font-medium">
                 Singarapettai – 635 307
               </span>
             </div>
