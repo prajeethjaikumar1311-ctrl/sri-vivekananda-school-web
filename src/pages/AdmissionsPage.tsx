@@ -20,7 +20,7 @@ export const AdmissionsPage: React.FC = () => {
               Admissions Open 2026–2027
             </h1>
             <p className="text-base sm:text-lg text-blue-100 leading-relaxed">
-              Enrolling students for Pre-KG to Standard V. Discover admission guidelines,
+              Enrolling students for Pre-KG to Class 8. Discover admission guidelines,
               required documents checklist, and RTE application procedures.
             </p>
           </div>

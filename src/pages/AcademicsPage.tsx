@@ -22,7 +22,7 @@ export const AcademicsPage: React.FC = () => {
             </h1>
             <p className="text-base sm:text-lg text-blue-100 leading-relaxed">
               Trilingual curriculum (Tamil, English, Hindi), spoken English mastery,
-              and dedicated handwriting training for students from Pre-KG to Standard V.
+              and dedicated handwriting training for students from Pre-KG to Class 8.
             </p>
           </div>
         </div>

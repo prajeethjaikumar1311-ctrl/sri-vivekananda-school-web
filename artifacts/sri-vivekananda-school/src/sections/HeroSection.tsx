@@ -61,7 +61,7 @@ export const HeroSection: React.FC = () => {
           </p>
 
           <p className="text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl font-normal drop-shadow-xs">
-            Empowering children from Pre-KG to Class V with strong academic foundations,
+            Empowering children from Pre-KG to Class 8 with strong academic foundations,
             fluent spoken English, trilingual learning (Tamil, English, Hindi), handwriting mastery,
             and noble values inspired by Swami Vivekananda.
           </p>

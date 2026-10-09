@@ -63,14 +63,14 @@ export const WelcomeSection: React.FC = () => {
             <p className="text-slate-600 leading-relaxed text-base">
               At Sri Vivekananda School, early education is crafted to give every child a safe,
               encouraging space to learn, express, and thrive. From their very first steps in Pre-KG
-              through Standard V, students are guided by experienced teachers who blend academic rigor
+              through Class 8, students are guided by experienced teachers who blend academic rigor
               with values of respect, truthfulness, and self-confidence inspired by the teachings of Swami Vivekananda.
             </p>
 
             {/* Core Commitments Checklist */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
               {[
-                { title: 'Quality Education', desc: 'Pre-KG to V Standard foundational mastery' },
+                { title: 'Quality Education', desc: 'Pre-KG to Class 8 comprehensive learning' },
                 { title: 'Good Discipline', desc: 'Character building, respect & timeless values' },
                 { title: 'Trilingual Curriculum', desc: 'Tamil, English and Hindi language learning' },
                 { title: 'Fluency Training', desc: 'Dedicated Spoken English and Handwriting focus' },

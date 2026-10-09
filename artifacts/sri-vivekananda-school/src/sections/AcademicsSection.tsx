@@ -5,11 +5,12 @@ import { academicClasses } from '../data/schoolData';
 import { SectionHeader } from '../components/SectionHeader';
 
 export const AcademicsSection: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'all' | 'kindergarten' | 'primary'>('all');
+  const [activeTab, setActiveTab] = useState<'all' | 'kindergarten' | 'primary' | 'middle'>('all');
 
   const filteredClasses = academicClasses.filter((c) => {
     if (activeTab === 'kindergarten') return c.category === 'Early Childhood' || c.category === 'Kindergarten';
     if (activeTab === 'primary') return c.category === 'Primary';
+    if (activeTab === 'middle') return c.category === 'Middle School';
     return true;
   });
 
@@ -19,21 +20,22 @@ export const AcademicsSection: React.FC = () => {
         <SectionHeader
           badge="Academic Curriculum"
           title="ACADEMICS"
-          subtitle="Pre-KG to Standard V Learning Framework"
-          description="A structured, stage-by-stage educational pathway supporting early childhood discovery through comprehensive primary mastery with language proficiency and foundational skills."
+          subtitle="Pre-KG to Class 8 Learning Framework"
+          description="A structured, stage-by-stage educational pathway supporting early childhood discovery through comprehensive primary and middle school mastery with language proficiency and foundational skills."
         />
 
         {/* Tab Filters */}
         <div className="flex items-center gap-2 mb-10 overflow-x-auto pb-2">
           {[
-            { id: 'all', label: 'All Classes (Pre-KG to V)' },
+            { id: 'all', label: 'All Classes (Pre-KG to Class 8)' },
             { id: 'kindergarten', label: 'Pre-KG, LKG & UKG' },
-            { id: 'primary', label: 'Primary Standards I – V' },
+            { id: 'primary', label: 'Primary (Standard I – V)' },
+            { id: 'middle', label: 'Middle School (Standard VI – VIII)' },
           ].map((tab) => (
             <button
               key={tab.id}
               type="button"
-              onClick={() => setActiveTab(tab.id as 'all' | 'kindergarten' | 'primary')}
+              onClick={() => setActiveTab(tab.id as 'all' | 'kindergarten' | 'primary' | 'middle')}
               className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold tracking-wide transition-all whitespace-nowrap ${
                 activeTab === tab.id
                   ? 'bg-blue-700 text-white shadow-md'

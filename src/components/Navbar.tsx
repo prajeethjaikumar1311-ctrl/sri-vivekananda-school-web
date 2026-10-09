@@ -185,13 +185,18 @@ export const Navbar: React.FC = () => {
                 <ChevronRight size={16} />
               </Link>
 
-              <a
-                href={`tel:${schoolData.primaryPhone.replace(/\s+/g, '')}`}
-                className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-slate-200 text-slate-700 font-semibold text-sm hover:bg-slate-50"
-              >
-                <Phone size={15} className="text-blue-600" />
-                <span>Call School: {schoolData.primaryPhone}</span>
-              </a>
+              <div className="flex flex-col gap-2 pt-1">
+                {schoolData.phoneNumbers.map((phone) => (
+                  <a
+                    key={phone}
+                    href={`tel:${phone.replace(/\s+/g, '')}`}
+                    className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-slate-200 text-slate-700 font-semibold text-sm hover:bg-slate-50"
+                  >
+                    <Phone size={15} className="text-blue-600" />
+                    <span>Call: {phone}</span>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>

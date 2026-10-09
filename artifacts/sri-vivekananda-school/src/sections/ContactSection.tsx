@@ -89,7 +89,7 @@ export const ContactSection: React.FC = () => {
       setFormStatus({
         type: 'success',
         message:
-          'Opening your email application to send this enquiry directly to the school administration (vivekanandaspt@gmail.com). You can also call us directly at 99656 36999.',
+          'Opening your email application to send this enquiry directly to the school administration (vivekanandaspt@gmail.com). You can also call us directly at +91 99656 36999 or +91 95970 61909.',
       });
       window.location.href = `mailto:${schoolData.emails.official}?subject=${subject}&body=${body}`;
     }, 400);
@@ -312,7 +312,7 @@ export const ContactSection: React.FC = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="e.g. 99656 36999"
+                      placeholder="e.g. +91 99656 36999"
                       required
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 text-sm focus:outline-hidden focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all shadow-2xs"
                     />
@@ -384,6 +384,9 @@ export const ContactSection: React.FC = () => {
                       <option value="Standard III">Standard III</option>
                       <option value="Standard IV">Standard IV</option>
                       <option value="Standard V">Standard V</option>
+                      <option value="Standard VI">Standard VI (Class 6)</option>
+                      <option value="Standard VII">Standard VII (Class 7)</option>
+                      <option value="Standard VIII">Standard VIII (Class 8)</option>
                     </select>
                   </div>
                 </div>

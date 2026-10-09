@@ -13,7 +13,7 @@ export const TopAnnouncementBar: React.FC = () => {
             Admissions 2026–2027
           </span>
           <span className="text-slate-100 font-medium hidden md:inline">
-            Now enrolling Pre-KG to V Standard
+            Now enrolling Pre-KG to Class 8
           </span>
           <span className="text-slate-300 hidden xl:inline">
             • Quality Education, Good Discipline & Holistic Development
@@ -21,15 +21,18 @@ export const TopAnnouncementBar: React.FC = () => {
         </div>
 
         {/* Right: Quick Contacts & RTE Link */}
-        <div className="flex items-center gap-4 text-slate-200 text-xs">
-          <a
-            href={`tel:${schoolData.primaryPhone.replace(/\s+/g, '')}`}
-            className="inline-flex items-center gap-1.5 hover:text-amber-300 transition-colors font-medium"
-            title="Call Sri Vivekananda School"
-          >
-            <Phone size={13} className="text-amber-400" />
-            <span>{schoolData.primaryPhone}</span>
-          </a>
+        <div className="flex flex-wrap items-center justify-center sm:justify-end gap-3 sm:gap-4 text-slate-200 text-xs">
+          {schoolData.phoneNumbers.map((phone) => (
+            <a
+              key={phone}
+              href={`tel:${phone.replace(/\s+/g, '')}`}
+              className="inline-flex items-center gap-1.5 hover:text-amber-300 transition-colors font-medium"
+              title={`Call ${phone}`}
+            >
+              <Phone size={13} className="text-amber-400" />
+              <span>{phone}</span>
+            </a>
+          ))}
 
           <span className="text-blue-700 hidden sm:inline">|</span>
 

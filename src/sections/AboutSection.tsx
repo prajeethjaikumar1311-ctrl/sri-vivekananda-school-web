@@ -24,7 +24,7 @@ export const AboutSection: React.FC = () => {
           badge="Educational Philosophy"
           title="ABOUT OUR SCHOOL"
           subtitle="Rooted in Discipline, Character & Holistic Growth"
-          description="Sri Vivekananda School, Singarapettai provides an integrated educational experience from Pre-KG to Standard V, combining foundational academics with character-building, language fluency, and creative development."
+          description="Sri Vivekananda School, Singarapettai provides an integrated educational experience from Pre-KG to Class 8, combining foundational academics with character-building, language fluency, and creative development."
         />
 
         {/* Top Grid: Campus Drone View & Mission Statement */}

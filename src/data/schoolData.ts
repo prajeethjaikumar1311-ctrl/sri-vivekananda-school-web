@@ -44,7 +44,7 @@ export interface AcademicClass {
   code: string;
   title: string;
   ageGroup: string;
-  category: 'Early Childhood' | 'Kindergarten' | 'Primary';
+  category: 'Early Childhood' | 'Kindergarten' | 'Primary' | 'Middle School';
   focus: string;
   highlights: string[];
 }
@@ -87,7 +87,7 @@ export const schoolData: ContactInfo = {
   trustName: 'JSP Educational Trust, Singarapettai',
   trustMotto: 'Nothing is Impossible',
   academicYear: '2026–2027',
-  classesOffered: 'Pre-KG to V Standard',
+  classesOffered: 'Pre-KG to Class 8 (Standard VIII)',
   address: {
     campus: 'Sri Vivekananda School',
     street: 'SKR Nagar',
@@ -97,8 +97,8 @@ export const schoolData: ContactInfo = {
     country: 'India',
     fullFormatted: 'SKR Nagar, Singarapettai – 635 307, Tamil Nadu, India',
   },
-  phoneNumbers: ['99656 36999', '95971 91909', '73733 31600', '95971 91929'],
-  primaryPhone: '99656 36999',
+  phoneNumbers: ['+91 99656 36999', '+91 95970 61909'],
+  primaryPhone: '+91 99656 36999',
   whatsappNumber: '919965636999',
   emails: {
     official: 'vivekanandaspt@gmail.com',
@@ -242,6 +242,48 @@ export const academicClasses: AcademicClass[] = [
       'Trilingual proficiency across reading and writing',
       'Computer proficiency & practical skills',
       'Holistic physical fitness, Yoga & discipline',
+    ],
+  },
+  {
+    id: 'std-6',
+    code: '09',
+    title: 'Standard VI',
+    ageGroup: '10.5 – 11.5 Years',
+    category: 'Middle School',
+    focus: 'Transition to middle school with advanced subject foundations, analytical skills, and inquiry-based learning.',
+    highlights: [
+      'Advanced Mathematics & General Science foundations',
+      'Trilingual reading & writing comprehension (Tamil, English, Hindi)',
+      'Computer applications & digital technology learning',
+      'Physical fitness, Yoga practice & sports discipline',
+    ],
+  },
+  {
+    id: 'std-7',
+    code: '10',
+    title: 'Standard VII',
+    ageGroup: '11.5 – 12.5 Years',
+    category: 'Middle School',
+    focus: 'Developing critical thinking, deeper conceptual mastery in sciences and social sciences, and confident communication.',
+    highlights: [
+      'Structured Science & Mathematics problem-solving',
+      'Spoken English & communication confidence',
+      'Social science perspectives & environmental awareness',
+      'Karate defense, Yoga & collaborative group projects',
+    ],
+  },
+  {
+    id: 'std-8',
+    code: '11',
+    title: 'Standard VIII',
+    ageGroup: '12.5 – 13.5 Years',
+    category: 'Middle School',
+    focus: 'Senior middle school excellence, preparatory academic rigor, leadership development, and character building.',
+    highlights: [
+      'Comprehensive middle school curriculum mastery',
+      'Strong language proficiency across Tamil, English & Hindi',
+      'Scientific reasoning, computer skills & logical problem solving',
+      'Character integrity, discipline & leadership values',
     ],
   },
 ];
@@ -606,7 +648,7 @@ export const schoolEventsTimeline = [
     category: 'ADMISSIONS',
     highlight: 'Enrolling Now',
     description:
-      'Admissions are open for Pre-KG, LKG, UKG and Standards I through V. Visit the school office or submit an enquiry online.',
+      'Admissions are open for Pre-KG, LKG, UKG and Standards I through VIII (Class 8). Visit the school office or submit an enquiry online.',
     image: '/images/admissions/admissions-2026-2027-poster.jpeg',
   },
 ];

@@ -21,7 +21,7 @@ export const AdmissionsSection: React.FC = () => {
         <SectionHeader
           badge="Admissions 2026–2027"
           title="ADMISSIONS OPEN 2026–2027"
-          subtitle="Enrolling for Pre-KG to Standard V"
+          subtitle="Enrolling for Pre-KG to Class 8"
           description="Give your child a strong foundation for a bright future. Welcome to Sri Vivekananda School, where learning, discipline, and character flourish together."
         />
 
@@ -45,8 +45,8 @@ export const AdmissionsSection: React.FC = () => {
             <div className="p-4 rounded-2xl bg-blue-50 border border-blue-200 text-xs text-blue-900 flex items-start gap-2.5">
               <Sparkles size={16} className="text-blue-700 mt-0.5 shrink-0" />
               <p>
-                <strong>Early Application Recommended:</strong> Seats in Pre-KG, LKG, UKG, and
-                Primary grades are filled in order of application. Contact the school office for
+                <strong>Early Application Recommended:</strong> Seats in Pre-KG, LKG, UKG, Primary,
+                and Middle School grades are filled in order of application. Contact the school office for
                 in-person visits and prospectus details.
               </p>
             </div>
@@ -60,7 +60,7 @@ export const AdmissionsSection: React.FC = () => {
                   Classes Enrolling
                 </span>
                 <span className="text-xs font-bold text-amber-600">
-                  Ages 2.5 Years to 10+ Years
+                  Ages 2.5 Years to 14 Years
                 </span>
               </div>
 
@@ -70,22 +70,32 @@ export const AdmissionsSection: React.FC = () => {
 
               <p className="text-sm text-slate-600 leading-relaxed">
                 Sri Vivekananda School welcomes applications for all grades from Pre-KG through
-                Class V. Our admission process is transparent, parent-friendly, and focused on
+                Class 8. Our admission process is transparent, parent-friendly, and focused on
                 providing an enriching educational journey for your child.
               </p>
 
               {/* Class Badges Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2">
-                {['Pre-KG', 'LKG', 'UKG', 'Standard I', 'Standard II', 'Standard III', 'Standard IV', 'Standard V'].map(
-                  (grade) => (
-                    <div
-                      key={grade}
-                      className="px-3 py-2 rounded-xl bg-white border border-slate-200 text-center font-bold text-xs text-slate-800 shadow-2xs"
-                    >
-                      {grade}
-                    </div>
-                  )
-                )}
+                {[
+                  'Pre-KG',
+                  'LKG',
+                  'UKG',
+                  'Standard I',
+                  'Standard II',
+                  'Standard III',
+                  'Standard IV',
+                  'Standard V',
+                  'Standard VI',
+                  'Standard VII',
+                  'Standard VIII',
+                ].map((grade) => (
+                  <div
+                    key={grade}
+                    className="px-3 py-2 rounded-xl bg-white border border-slate-200 text-center font-bold text-xs text-slate-800 shadow-2xs"
+                  >
+                    {grade}
+                  </div>
+                ))}
               </div>
 
               {/* CTAs */}
@@ -98,13 +108,17 @@ export const AdmissionsSection: React.FC = () => {
                   <ChevronRight size={16} />
                 </Link>
 
-                <a
-                  href={`tel:${schoolData.primaryPhone.replace(/\s+/g, '')}`}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-300 hover:border-blue-700 text-slate-800 font-bold text-sm transition-all"
-                >
-                  <Phone size={15} className="text-blue-700" />
-                  <span>CALL: {schoolData.primaryPhone}</span>
-                </a>
+                {schoolData.phoneNumbers.map((phone) => (
+                  <a
+                    key={phone}
+                    href={`tel:${phone.replace(/\s+/g, '')}`}
+                    className="inline-flex items-center gap-2 px-4 py-3 rounded-xl border border-slate-300 hover:border-blue-700 text-slate-800 font-bold text-sm transition-all"
+                    title={`Call ${phone}`}
+                  >
+                    <Phone size={15} className="text-blue-700" />
+                    <span>CALL: {phone}</span>
+                  </a>
+                ))}
               </div>
             </div>
 
