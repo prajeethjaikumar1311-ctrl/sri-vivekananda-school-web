@@ -105,7 +105,7 @@ export const schoolData: ContactInfo = {
     note: 'Preserved as visible in official school material. Standard verified address: vivekanandaspt@gmail.com',
   },
   trustSeal: '/images/logo/jsp-educational-trust-seal.jpeg',
-  rtePortalUrl: 'https://rte.tnschools.gov.in',
+  rtePortalUrl: 'https://righttoeducation.in/resources/states/tamil-nadu',
 };
 
 export const leadershipData: {
@@ -569,8 +569,8 @@ export const rteAdmissionInfo = {
   subtitle: 'Right of Children to Free and Compulsory Education Act (2026–2027)',
   eligibilityBirthPeriod: '01-08-2022 to 31-07-2023',
   residentialCriteria: 'Residential address should be within 1-Kilometer from the school',
-  portalUrl: 'https://rte.tnschools.gov.in',
-  portalLabel: 'rte.tnschools.gov.in',
+  portalUrl: 'https://righttoeducation.in/resources/states/tamil-nadu',
+  portalLabel: 'righttoeducation.in',
   scheduleNote:
     'Application dates shown in the official poster: 20-04-2026 to 18-05-2026. Please check the Tamil Nadu RTE portal or visit the school office for current official schedule.',
 };

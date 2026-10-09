@@ -153,14 +153,20 @@ export const AdmissionsSection: React.FC = () => {
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* RTE Poster Inset */}
             <div className="lg:col-span-4 order-2 lg:order-1">
-              <div className="rounded-2xl overflow-hidden shadow-xl ring-2 ring-amber-400 bg-slate-900">
+              <a
+                href={rteAdmissionInfo.portalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded-2xl overflow-hidden shadow-xl ring-2 ring-amber-400 bg-slate-900 group cursor-pointer transition-transform hover:scale-[1.01]"
+                title="Open Tamil Nadu RTE Portal"
+              >
                 <img
                   src="/images/admissions/rte-admission-notice-2026.jpeg"
                   alt="RTE Admission Notice 2026-2027"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover group-hover:opacity-95 transition-opacity"
                   loading="lazy"
                 />
-              </div>
+              </a>
               <p className="text-[11px] text-slate-300 text-center mt-2">
                 Official Tamil Nadu RTE Notice
               </p>
@@ -168,10 +174,17 @@ export const AdmissionsSection: React.FC = () => {
 
             {/* RTE Information Details */}
             <div className="lg:col-span-8 order-1 lg:order-2 space-y-4">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-amber-400 text-slate-950">
+              <a
+                href={rteAdmissionInfo.portalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-amber-400 hover:bg-amber-300 text-slate-950 transition-colors w-fit"
+                title="Tamil Nadu RTE Portal"
+              >
                 <Sparkles size={12} />
-                {rteAdmissionInfo.title}
-              </span>
+                <span>{rteAdmissionInfo.title}</span>
+                <ExternalLink size={11} />
+              </a>
 
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
                 Right to Education (RTE) Scheme Guidelines

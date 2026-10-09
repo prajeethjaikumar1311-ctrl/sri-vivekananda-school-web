@@ -27,7 +27,7 @@ All visual content on this website uses the **authentic official school photogra
 2. **Top Announcement Bar:**
    - Admissions pill for academic year 2026–2027.
    - Direct clickable school phone numbers and official email address.
-   - Informational link to Tamil Nadu Government's official RTE portal (`rte.tnschools.gov.in`).
+   - Informational link to Tamil Nadu RTE resource portal (`righttoeducation.in/resources/states/tamil-nadu`).
 
 3. **Visually Engaging Hero Section:**
    - High-definition photograph of the 3-storey school building in Singarapettai with subtle dark blue overlay.
