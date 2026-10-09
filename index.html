@@ -18,13 +18,14 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Sri Vivekananda School, Singarapettai" />
+    <meta property="og:site_name" content="Sri Vivekananda School" />
     <meta property="og:title" content="Sri Vivekananda School, Singarapettai" />
     <meta
       property="og:description"
       content="Official website of Sri Vivekananda School, Singarapettai – 635 307. Explore academics, admissions, school activities, campus facilities, and contact information."
     />
-    <meta property="og:image" content="/images/campus/campus-building-wide.jpeg" />
+    <meta property="og:url" content="https://sri-vivekananda-school-web.vercel.app/" />
+    <meta property="og:image" content="https://sri-vivekananda-school-web.vercel.app/images/campus/campus-building-wide.jpeg" />
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -33,39 +34,60 @@
       name="twitter:description"
       content="Official website of Sri Vivekananda School, Singarapettai – 635 307. Quality education, good discipline and holistic development."
     />
-    <meta name="twitter:image" content="/images/campus/campus-building-wide.jpeg" />
+    <meta name="twitter:image" content="https://sri-vivekananda-school-web.vercel.app/images/campus/campus-building-wide.jpeg" />
 
-    <!-- Canonical URL placeholder -->
-    <link rel="canonical" href="https://srivivekanandaschool.edu.in" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sri-vivekananda-school-web.vercel.app/" />
 
-    <!-- Official Circular School Logo Favicon -->
-    <link rel="icon" type="image/jpeg" href="/images/logo/sri-vivekananda-school-logo.jpeg" />
-    <link rel="apple-touch-icon" href="/images/logo/sri-vivekananda-school-logo.jpeg" />
+    <!-- Authentic School Logo Favicon Configuration -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="144x144" href="/favicon-144x144.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
 
-    <!-- Schema.org EducationalOrganization / School Structured Data -->
+    <!-- Schema.org WebSite & EducationalOrganization / School Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "School",
-        "name": "Sri Vivekananda School, Singarapettai",
-        "alternateName": "Sri Vivekananda School",
-        "description": "School offering quality education from Pre-KG to Standard V with trilingual curriculum, spoken English training, handwriting coaching, computer training, yoga, and karate in Singarapettai.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "SKR Nagar",
-          "addressLocality": "Singarapettai",
-          "postalCode": "635307",
-          "addressRegion": "Tamil Nadu",
-          "addressCountry": "IN"
-        },
-        "telephone": ["+919965636999", "+919597191909", "+917373331600", "+919597191929"],
-        "email": "vivekanandaspt@gmail.com",
-        "logo": "/images/logo/sri-vivekananda-school-logo.jpeg",
-        "image": "/images/campus/campus-building-wide.jpeg",
-        "parentOrganization": {
-          "@type": "Organization",
-          "name": "JSP Educational Trust"
-        }
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://sri-vivekananda-school-web.vercel.app/#website",
+            "url": "https://sri-vivekananda-school-web.vercel.app/",
+            "name": "Sri Vivekananda School",
+            "alternateName": "Sri Vivekananda School, Singarapettai",
+            "description": "Official website of Sri Vivekananda School, Singarapettai – 635 307.",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "School",
+            "@id": "https://sri-vivekananda-school-web.vercel.app/#school",
+            "name": "Sri Vivekananda School, Singarapettai",
+            "alternateName": "Sri Vivekananda School",
+            "url": "https://sri-vivekananda-school-web.vercel.app/",
+            "description": "School offering quality education from Pre-KG to Standard V with trilingual curriculum, spoken English training, handwriting coaching, computer training, yoga, and karate in Singarapettai.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "SKR Nagar",
+              "addressLocality": "Singarapettai",
+              "postalCode": "635307",
+              "addressRegion": "Tamil Nadu",
+              "addressCountry": "IN"
+            },
+            "telephone": ["+919965636999", "+919597191909", "+917373331600", "+919597191929"],
+            "email": "vivekanandaspt@gmail.com",
+            "logo": "https://sri-vivekananda-school-web.vercel.app/images/logo/sri-vivekananda-school-logo.jpeg",
+            "image": "https://sri-vivekananda-school-web.vercel.app/images/campus/campus-building-wide.jpeg",
+            "parentOrganization": {
+              "@type": "EducationalOrganization",
+              "name": "JSP Educational Trust"
+            }
+          }
+        ]
       }
     </script>
   </head>
