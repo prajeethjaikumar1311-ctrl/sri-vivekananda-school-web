@@ -5,6 +5,7 @@ import { WhyChooseSection } from '../sections/WhyChooseSection';
 import { AboutSection } from '../sections/AboutSection';
 import { AcademicsSection } from '../sections/AcademicsSection';
 import { LeadershipSection } from '../sections/LeadershipSection';
+import { GallerySection } from '../sections/GallerySection';
 import { AdmissionsSection } from '../sections/AdmissionsSection';
 import { ContactSection } from '../sections/ContactSection';
 
@@ -32,7 +33,10 @@ export const HomePage: React.FC = () => {
       {/* 9. School Administration */}
       <LeadershipSection />
 
-      {/* 10. Contact / Get In Touch */}
+      {/* 10. School Photo Gallery */}
+      <GallerySection />
+
+      {/* 11. Contact / Get In Touch */}
       <ContactSection />
     </main>
   );
